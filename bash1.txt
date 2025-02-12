@@ -1,0 +1,24 @@
+cd ~
+pwd
+mkdir test1
+cd test1
+touch 1 2 3
+ls
+cd
+mkdir test2
+rmdir test2
+cd test1
+rm 2
+cd
+mkdir test3
+cd test3
+touch 1 2
+cd
+rm -r test3
+mkdir test4
+mv test1/1 test1/3 test4
+echo -e "line\nline\nline" >> test4/1
+cat test4/1
+echo -e "line\nline\nline" >> test4/3
+cat test4/1 test4/3
+nano test4/1

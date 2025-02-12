@@ -1,0 +1,28 @@
+cd
+mkdir test3
+echo -e "row1\nrow2\nrow3\nrow4" > test3/4
+echo -e "row1\nrow2\nrow3\nrow4" > test3/5
+echo -e "row1\nrow2\nrow3\nrow4" > test3/6
+grep "row2" test3/5
+grep -c "row" test3/6
+find test3 -name "5"
+find test3 -name "5" -delete
+echo "test" > test3/4
+nano test3/4
+echo "test" >> test3/4
+ps aux
+kill 666
+ping rusau.net
+ping -c 5 rusau.net
+curl https://petstore.swagger.io/v2/pet/findByStatus?status=available -H "accept: application/json"
+curl -X POST "https://petstore.swagger.io/v2/user" -H "accept: application/json" -H "Content-Type: application/json" -d '{
+  "id": 5432,
+  "username": "daria_test",
+  "firstName": "daria",
+  "lastName": "test",
+  "email": "test@test.com",
+  "password": "test",
+  "phone": "9248483534",
+  "userStatus": 1
+}'
+
